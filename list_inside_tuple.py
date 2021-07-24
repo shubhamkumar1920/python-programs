@@ -1,0 +1,5 @@
+favourites = ('southern mangnolia',['Tokya','Ghoul theme','landscape'])
+favourites[1].pop()
+print(favourites)
+favourites[1].append("we made it")
+print(favourites)

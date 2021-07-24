@@ -1,0 +1,5 @@
+name=input("enter your name:")
+age=input("enter your age:")
+name1,age1=input("enter your name and age").split(",")
+print(name,name1)
+print(age,age1)

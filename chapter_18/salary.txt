@@ -1,0 +1,4 @@
+harshit,1000
+mohit,50
+aaditya,200
+nitish,500

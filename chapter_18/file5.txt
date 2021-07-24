@@ -1,0 +1,310 @@
+Abraham Silberschatz is the Sidney J. Weinberg Professor & Chair of 
+
+Computer Science at Yale University. Prior to joining Yale, he was the Vice President of the Info
+rmation Sciences Research Center at Bell Laboratories. Prior to that,
+ he held a chaired professorship in the Department of Computer Sciences at
+  the University of Texas at Austin. Professor Silberschatz is an ACM Fello
+  w and an IEEE Fellow. He received the 2002 IEEE Taylor L. Booth Education Award,
+
+   the 1998 ACM Karl V. Karlstrom Outstanding Educator Award, and the 1997 ACM SIGMO
+   D Contribution Award. In recognition of his outstanding level of innovation and te
+   chnical excellence, he was awarded the Bell Laboratories President's Award for three d
+   ifferent projects-the QTM Project (1998), the DataBlitz Project (1999), and the Netlnventory Proj
+   ect (2004). Professor Silberschatz' writings have appeared in numerous ACM and IEEE publications 
+   and other professional conferences and journals. He is a coauthor of the textbook Database System
+
+    Concepts. He has also written Op-Ed articles for the New York Times, the Boston Globe, and the H
+    artford Courant, among others. 
+Peter Baer Galvin is the chief technologist for Corporate
+ Technologies (www.cptech.com), a computer facility resell
+ er and integrator. Before that, Mr. Galvin was the system
+ s manager for Brown University's Computer Science Department.
+  He is also Sun columnist for ;login: magazine. Mr. Galvin has
+   written articles for Byte and other magazines, and has written
+    columns for Sun World and SysAdmin magazines. As a consultant
+     and trainer, he has given talks and taught tutorials on security and system administration worldwide. 
+Greg Gagne is chair of the Computer Science department at Westminster
+ College in Salt Lake City where he has been teaching since 1990. In 
+ addition to teaching operating systems, he also teaches computer networks
+ , distributed systems, and software engineering. He also provides workshops
+  to computer science educators and industry professionals. 
+Operating systems are an essential part of any computer system. Similarly,
+ a course on operating systems is an essential part of any computer-science
+  education. This field is undergoing rapid change, as computers are now
+   prevalent in virtually every application, from games for children through
+    the most sophisticated planning tools for governments and multinational 
+    firms. Yet the fundamental concepts remain fairly clear, and it is on these
+     that we base this book. We wrote this book as a text for an introductory
+      course in operating systems at the junior or senior undergraduate level
+       or at the first-year graduate level. We hope that practitioners will
+        also find it useful. It provides a clear description of the concepts 
+        that underlie operating systems. As prerequisites, we assume that the
+         reader is familiar with basic data struchues, computer organization,
+          and a high-level language, such as C or Java. The hardware topics 
+          required for an understanding of operating systems are included in
+           Chapter 1. For code examples, we use predominantly C, with some J
+           ava, but the reader can still understand the algorithms without a
+            thorough knowledge of these languages. Concepts are presented us
+            ing intuitive descriptions. Important theoretical results are co
+            vered, but formal proofs are omitted. The bibliographical notes 
+            at the end of each chapter contain pointers to research papers i
+            n which results were first presented and proved, as well as refe
+            rences to material for further reading. In place of proofs, figu
+            res and examples are used to suggest why we should expect the re
+            sult in question to be true. The fundamental concepts and algori
+            thms covered in the book are often based on those used in existi
+            ng conunercial operating systems. Our aim is to present these co
+            ncepts and algorithms in a general setting that is not tied to o
+            ne particular operating system. We present a large number of exa
+            mples that pertain to the most popular and the most im1.ovative 
+            operating systems, including Sun Microsystems' Solaris; Linux; M
+            icrosoft Windows Vista, Windows 2000, and Windows XP; and Apple 
+             OS X. When we refer to Windows XP as an example operating syste
+             
+             m, we are implying Windows Vista, Windows XP, and Windows 2000.
+              If a feature exists in a specific release, we state this 
+vii 
+viii 
+The organization of this text reflects our many years of teaching cours
+es on operating systems. Consideration was also given to the feedback provid
+ed by the reviewers of the text, as well as comments submitted by readers of
+ earlier editions. In addition, the content of the text corresponds to the s
+ uggestions from Computing Curricula 2005 for teaching operating systems, pu
+ blished by the Joint Task Force of the IEEE Computing Society and the Assoc
+ iation for Computing Machinery (ACM). On the supporting Web site for this t
+ ext, we provide several sample syllabi that suggest various approaches for 
+ using the text in both introductory and advanced courses. As a general rule
+ , we encourage readers to progress sequentially through the chapters, as th
+ is strategy provides the most thorough study of operating systems. However,
+ 
+  by using the sample syllabi, a reader can select a different ordering of c
+  
+  hapters (or subsections of chapters). On-line support for the text is prov
+  
+  ided by WileyPLUS. On this site, students can find sample exercises and 
+   problems, and instructors can assign and grade problems. In addition, in 
+   WileyPLUS, students can access new operating-system simulators, which are
+    used to work through exercises and hands-on lab activities. References t
+    o the simulators and associated activities appear at the ends of several
+ chapters in the text. 
+The text is organized in nine major parts: 
+Overview. Chapters 1 and 2 explain what operating systems are, what they do, 
+and how they are designed and constructed. These chapters discuss what the co
+mmon features of an operating system are, what an operating system does for t
+he user, and what it does for the computer-system operator. The presentation 
+is motivational and explanatory in nature. We have avoided a discussion of ho
+w things are done internally in these chapters. Therefore, they are suitable 
+for individual readers or for students in lower-level classes who want to lea
+rn what an operating system is without getting into the details of the intern
+
+al algorithms. 
+Process management and Process coordination. Chapters 3 through 7 describe 
+
+
+ process concept and concurrency as the heart of modern operating systems. A process is the 
+ unit of work in a system .. Such a system consists of a collection of concurrently executin
+ g processes, some of which are operating-system processes (those that execute system code) 
+ and the rest of which are user processes (those that execute user code). These chapters cover
+
+  n1.ethods for process scheduling, interprocess communication, process synchronization, and d
+  eadlock handling. Also included is a discussion of threads, as well as an examination of iss
+  ues related to multicore systems. 
+Memory management. Chapters 8 and 9 deal with the management of main memory during the exec
+ution of a process. To improve both the utilization of the CPU and the speed of its response to
+
+ its users, the computer must keep several processes in memory. There are many different 
+ix 
+management, and the effectiveness of a particular algorithm depends on the situation. 
+Storage management. Chapters 10 through 13 describe how the file system, mass storage, and I
+/0 are handled in a modern computer system. The file system provides the mechanism for on-li
+
+ne storage of and access to both data and programs. We describe the classic internal algorit
+hms and structures of storage management and provide a firm practical understanding of t
+he algorithms used -their properties, advantages, and disadvantages. Our discussion of s
+torage also includes matters related to secondary and tertiary storage. Since the I/0 de
+vices that attach to a computer vary widely, the operating system needs to provide a wid
+e range of functionality to applications to allow them to control all aspects of these device
+s. We discuss system I/O in depth, including I/O system design, interfaces, and internal system struct
+ures and functions. In many ways, I/O devices are the slowest major components of the computer. Because
+ they represent a performance bottleneck, we also examine performance issues associated with I/0 devices. 
+Protection and security. Chapters 14 and 15 discuss the mechanisms necessary for the protection 
+and security of computer systems. The processes in an operating system must be protected from o
+ne another's activities, and to provide such protection, we must ensure that only processes th
+at have gained proper authorization from the operating system can operate on the files, memory, CPU, an
+d other resources of the system. Protection is a mechanism for controlling the access of programs, proc
+esses, or users to the resources defined by a computer system. This mechanism must provide a means of 
+specifying the controls to be imposed, as well as a means of enforcement. Security protects the integri
+ty of the information stored in the system (both data and code), as well as the physical resources of t
+he system, from 1.mauthorized access, malicious destruction or alteration, and accidental introduction of inconsistency. 
+Distributed systems. Chapters 16 through 18 deal with a collection of processors that do not share memo
+ry or a clock-a distributed system. By providing the user with access to the various resources that it 
+maintains, a distributed system can improve computation speed and data availability and reliability. Su
+ch a system also provides the user with a distributed file system, which is a file-service system whose
+ users, servers, and storage devices are dispersed among the sites of a distributed system. A distribut
+ ed system must provide various mechanisms for process synchronization and communication, as well as fo
+ r dealing with deadlock problems and a variety of failures that are not encountered in a centralized system. 
+Special-purpose systems. Chapters 19 and 20 deal with systems used for specific purposes, including real-t
+ime systems and multimedia systems. These systems have specific requirements that differ from those of th
+e general-purpose systems that are the focus of the remainder of the text. Real-time systems may require 
+not only that computed results be "correct" but also that the results be produced within a specified deadl
+ine period. Multimedia systems require quality-of-service guarantees ensuring that the multimedia data are 
+delivered to clients within a specific time frame. 
+X 
+hlo i am a prgrammer my name is shubham kumar ,i am persuing my bachelor in engineering degree in University institute
+of technolgy,bardhaman,west bengal,india. i have studied c,c++ data sturcture ,algorithm basic about python some basic
+tool in html,css mogodb,node.js,angular Java so i want to compit the project so we want to studied cloud computing
+so i want 
+Case studies. Chapters 21 through 23 in the book, and Appendices A through C (which are available on www.wi
+ley.comJ go I global/ silberschatz and in WileyPLUS), integrate the concepts described in the earlier chapt
+ers by describing real operating systems. These systems include Linux, Windows XP, FreeBSD, Mach, and Windo
+ws 2000. We chose Linux and FreeBSD because UNIX-at one time-was almost small enough to understand yet was n
+ot a "toy" operating system. Most of its internal algorithms were selected for simplicity, rather than for s
+peed or sophistication. Both Linux and FreeBSD are readily available to computer-science departments, so many
+ students have access to these systems. We chose Windows XP and Windows 2000 because they provide an opporhmi
+ ty for us to study a modern operating system with a design and implementation drastically different from tho
+ se of UNIX. Chapter 23 briefly describes a few other influential operating systems. 
+This book uses examples of many real-world operating systems to illustrate fundamental operating-system co
+ncepts. However, particular attention is paid to the Microsoft family of operating systems (including Wind
+ows Vista, Windows 2000, and Windows XP) and various versions of UNIX (including Solaris, BSD, and Mac OS 
+X). We also provide a significant amount of coverage of the Linux operating system reflecting the most rec
+ent version of the kernel -Version 2.6-at the time this book was written. The text also provides several ex
+ample programs written in C and Java. These programs are intended to run in. the following programming environments: 
+Windows systems. The primary programming environment for Windows systems is the Win32 API (application pr
+ogramming interface), which provides a comprehensive set of functions for managing processes, threads, me
+mory, and peripheral devices. We provide several C programs illustrating the use of the Win32 API. Example
+ programs were tested on systems rum1.ing Windows Vista, Windows 2000, and Windows XP. 
+POSIX. POSIX (which stands for Portable Operating System Inte1jace) represents a set of standards impleme
+nted primarily for UNIX-based operating systems. Although Windows Vista, Windows XP, and Windows 2000 sys
+tems can also run certain POSIX programs, our coverage of POSIX focuses primarily on UNIX and Linux syste
+ms. POSIX-compliant systems must implement the POSIX core standard (POSIX.1): Linux, Solaris, and Mac OS 
+X are examples of POSIX-compliant systems. POSIX also defines several extensions to the standards, includi
+ng real-time extensions (POSIXl.b) and an extension for a threads library (POSIX1.c, better known as Pthre
+ads). We provide several programn1.ing examples written inC illustrating the POSIX base API, as well as Pt
+hreads and the extensions for real-time programming. These example programs were tested on Debian Linux 2.4
+ and 2.6 systems, Mac OS X 10.5, and Solaris 10 using the gee 3.3 and 4.0 compilers. 
+Java. Java is a widely used programming language with a rich API and built-in language support for thread
+ creation and management. Java 
+xi 
+programs run on any operating system supporting a Java virtual machine (or JVM). We illustrate various op
+rating system and networking concepts with several Java programs tested using the Java 1.5 JVM. 
+We have chosen these three programming environments because it is our opinion that they best represent t
+he two most popular models of operating systems: Windows and UNIX/Linux, along with the widely used Java 
+environment. Most programming examples are written in C, and we expect readers to be comfortable with thi
+s language; readers familiar with both the C and Java languages should easily understand most programs pr
+ovided in this text. In some instances-such as thread creation-we illustrate a specific concept using all
+ three programming environments, allowing the reader to contrast the three different libraries as they ad
+ dress the same task. In other situations, we may use just one of the APis to demonstrate a concept. For 
+ example, we illustrate shared memory using just the POSIX API; socket programming in TCP /IP is highligh
+ ted using the Java API. 
+As we wrote the Eighth Edition of Operating System Concepts, we were guided by the many comments and 
+suggestions we received from readers of our previous editions, as well as by our own observations abo
+ut the rapidly changing fields of operating systems and networking. We have rewritten material in most
+ of the chapters by bringing older material up to date and removing material that was no longer of int
+ erest or relevance. We have made substantive revisions and organizational changes in many of the cha
+ ters. Most importantly, we have added coverage of open-source operating systems in Chapter 1. We have
+  also added more practice exercises for students and included solutions in WileyPLUS, which also incl
+  udes new simulators to provide demonstrations of operating-system operation. Below, we provide a bri
+  ef outline of the major changes to the various chapters: 
+Chapter 1, Introduction, has been expanded to include multicore CPUs, clustered computers, and open-
+source operating systems. 
+Chapter 2, System Structures, provides significantly updated coverage of virtual machines, as well a
+s multicore CPUs, the GRUB boot loader, and operating-system debugging. 
+Chapter 3, Process Concept, provides new coverage of pipes as a form of interprocess communication. 
+Chapter 4, Multithreaded Programming, adds new coverage of programming for multicore systems. 
+Chapter 5, Process Scheduling, adds coverage of virtual machine scheduling and multithreaded, multicore architectures. 
+Chapter 6, Synchronization, adds a discussion of mutual exclusion locks, priority inversion, and transactional memory. 
+Chapter 8, Memory-Management Strategies, includes discussion of NUMA. 
+xii 
+Chapter 9, Virtual-Memory Management, updates the Solaris example to include Solaris 10 memory managernent. 
+Chapter 10, File System, is updated with current technologies and capacities. 
+Chapter 11, Implementing File Systems, includes a full description of Sun's ZFS file system and exp
+ands the coverage of volumes and directories. 
+Chapter 12, Secondary-Storage Structure, adds coverage of iSCSI, volumes, and ZFS pools. 
+Chapter 13, I/0 Systems, adds coverage of PCIX PCI Express, and HyperTransport. 
+Chapter 16, Distributed Operating Systems, adds coverage of 802.11 wireless networks. 
+Chapter 21, The LimiX System, has been updated to cover the latest version of the LimiX kernel. 
+Chapter 23, Influential Operating Systems, increases coverage of very early computers as well as TOPS
+-20, CP/M, MS-DOS, Windows, and the original Mac OS. 
+To emphasize the concepts presented in the text, we have added several programming problems and project
+s that use the POSIX and Win32 APis, as well as Java. We have added more than 15 new programming probl
+ems, which emphasize processes, threads, shared memory, process synchronization, and networking. In ad
+ition, we have added or modified several programming projects that are more involved than standard p
+rogramming exercises. These projects include adding a system call to the Linux kernel, using pipes o
+n both UNIX and Windows systems, using UNIX message queues, creating multithreaded applications, and
+ solving the producer-consumer problem using shared memory. The Eighth Edition also incorporates a s
+ et of operating-system simulators designed by Steven Robbins of the University of Texas at San Anton
+ io. The simulators are intended to model the behavior of an operating system as it performs various
+  tasks, such as CPU and disk-head schedulil1.g, process creation and interprocess communication, star
+  vation, and address translation. These simulators are written in Java and will run on any computer s
+  ystern with Java 1.4. Students can download the simulators from WileyPLUS and observe the behavior o
+  f several operating system concepts in various scenarios. In addition, each simulator includes sever
+  al exercises that ask students to set certain parameters of the simulator, observe how the system b
+  ehaves, and then explain this behavior. These exercises can be assigned through WileyPLUS. The Wile
+  yPLUS course also includes algorithmic problems and tutorials developed by Scott M. Pike of Texas A&M University. 
+xiii 
+The following teaching supplencents are available in WileyPLUS and on www.wiley.coml go I global/ silb
+erschatz: a set of slides to accompany the book, model course syllabi, all C and Java source code, up-
+to-date errata, three case study appendices and the Distributed Communication appendix. The WileyPLUS 
+course also contains the simulators and associated exercises, additional practice exercises (with solu
+tions) not found in the text, and a testbank of additional problems. Students are encouraged to solve 
+the practice exercises on their own and then use the provided solutions to check their own answers. To 
+obtain restricted supplements, such as the solution guide to the exercises in the text, contact your lo
+cal J orne Wiley & Sons sales representative. Note that these supplements are available only to faculty
+ who use this text. 
+We use the mailman system for communication among the users of Operating System Concepts. If you wi
+sh to use this facility, please visit the following URL and follow the instructions there to subscr
+ibe: http: I I mailman.cs.yale.edul mailmanllistinfo I os-book The mailman mailing-list system prov
+ides many benefits, such as an archive of postings, as well as several subscription options, includ
+ing digest and Web only. To send messages to the list, send e-mail to: os-book@cs.yale.edu Dependin
+g on the message, we will either reply to you personally or forward the message to everyone on the 
+mailing list. The list is moderated, so you will receive no inappropriate mail. Students who are u
+sing this book as a text for class should not use the list to ask for answers to the exercises. Th
+ey will not be provided. 
+We have attempted to clean up every error in this new edition, but-as happens with operating syste
+ms-a few obscure bugs may remain. We would appreciate hearing from you about any textual errors or
+ omissions that you identify. If you would like to suggest improvements or to contribute exercises
+ , we would also be glad to hear from you. Please send correspondence to os-book-authors@cs.yale.edu. 
+This book is derived from the previous editions, the first three of which were coauthored by Ja
+
+mes Peterson. Others who helped us with previous editions include Hamid Arabnia, Rida Bazzi, Rand
+y Bentson, David Black, 
+xiv 
+Joseph Boykin, Jeff Brumfield, Gael Buckley, Roy Campbell, P. C. Capon,
+ John Carpenter, Gil Carrick, Thomas Casavant, Bart Childs, Ajoy Kum.ar
+  Datta, Joe Deck, Sudarshan K. Dhall, Thomas Doeppner, Caleb Drake, M.
+   Racsit Eskicioglu, Hans Flack, Robert Fowler, G. Scott Graham, Richard G
+   uy, Max Hailperin, Rebecca I-Iartncan, Wayne Hathaway, Christopher Haynes, 
+   Don Heller, Bruce Hillyer, Mark Holliday, Dean Hougen, Michael Huangs, Ahm
+   ed Kamet Marty Kewstet Richard Kieburtz, Carol Kroll, Marty K westet Thomas
+    LeBlanc, John Leggett, Jerrold Leichter, Ted Leung, Gary Lippman, Carolyn 
+    Miller, Michael Molloy, Euripides Montagne, Yoichi Muraoka, Jim M. Ng, Ban
+    u Ozden, Ed Posnak, Boris Putanec, Charles Qualline, John Quarterman, Mike Rei
+    ter, Gustavo Rodriguez-Rivera, Carolyn J. C. Schauble, Thomas P. Skimcer, Yann
+    is Smaragdakis, Jesse St. Laurent, John Stankovic, Adam Stauffer, Steven Stepa
+    nek, John Sterling, Hal Stern, Louis Stevens, Pete Thomas, David Umbaugh, Steve
+     Vinoski, Tommy Wagner, Larry L. Wear, Jolm Werth, James M. Westall, J. S. Weston
+     , and Yang Xiang Parts of Chapter 12 were derived from a paper by Hillyer and Sil
+     berschatz [1996]. Parts of Chapter 17 were derived from a paper by Levy and Silber
+     schatz [1990]. Chapter 21 was derived from an unpublished manuscript by Stephen Tweed
+     ie. Chapter 22 was derived from an unpublished manuscript by Dave Probert, Cliff Martin
+     , and Avi Silberschatz. Appendix C was derived from an unpublished manuscript by Cliff Ma
+     rtin. Cliff Martin also helped with updating the UNIX appendix to cover FreeBSD. Some of 
+     the exercises and accompanying solutions were supplied by Arvind Krishnamurthy. Mike Shap
+     iro, Bryan Cantrill, and Jim Mauro answered several Solarisrelated questions. Bryan Cantri
+     ll from Sun Microsystems helped with the ZFS coverage. Steve Robbins of the University of T
+     exas at San Antonio designed the set of simulators that we incorporate in WileyPLUS. Reece N
+     ewman of Westminster College initially explored this set of simulators and their appropriaten
+     ess for this text. Josh Dees and Rob Reynolds contributed coverage of Microsoft's .NET. The
+      project for POSIX message queues was contributed by John Trona of Saint Michael's College i
+      n Colchester, Vermont. Marilyn Turnamian helped generate figures and presentation slides. Ma
+      rk Wogahn has made sure that the software to produce the book (e.g., Latex macros, fonts) wo
+      rks properly. Our Associate Publisher, Dan Sayre, provided expert guidance as we prepared thi
+      s edition. He was assisted by Carolyn Weisman, who managed many details of this project smoothl
+      y. The Senior Production Editor Ken Santor, was instrumental in handling all the production deta
+      ils. Lauren Sapira and Cindy Jolmson have been very helpful with getting material ready and avai
+      lable for WileyPlus. Beverly Peavler copy-edited the manuscript. The freelance proofreader was K
+      atrina Avery; the freelance indexer was Word Co, Inc. 
+Abraham Silberschatz, New Haven, CT, 2008 Peter Baer Galvin, Burlingt
+
+on, MA 2008 Greg Gagne, Salt Lake City, UT, 2008 
+PART 

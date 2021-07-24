@@ -1,0 +1,5 @@
+numbers = list(range(1,11))
+print(numbers)
+print(numbers.pop())
+# popped_item = numbers.pop()
+print(numbers.index(1))
